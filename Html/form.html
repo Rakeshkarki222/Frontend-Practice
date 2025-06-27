@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Enquiry Form</legend>
+      <form>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          pattern="[a-zA-Z]{5,40  }"
+          placeholder="Enter your name"
+          required
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          require
+        />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="[a-zA-Z0-9]{8,20}"
+          title="Password must be 8 to 20 characters long and can include letters and numbers."
+          placeholder="Enter your password"
+          required
+        />
+        <br />
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          pattern="[0-9]{10}"
+          title="Enter the valid phone number with 10 digits"
+          placeholder="Enter the phone number"
+          name="Phno"
+          id="Phno"
+          required
+        />
+        <br />
+        <label for="gender">Gender:</label>
+        <br />
+        <input type="radio" value="male" name="gender" id="gender" />Male
+        <br />
+        <input type="radio" value="female" name="gender" id="gender" />Female
+        <br />
+        <label for="country">Country:</label>
+        <br />
+        <select name="country" id="country">
+            <option value="Select Country">--Select Country--</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+          <option value="Canada">Canada</option>
+        </select>
+        <br />
+        <label for="course">Course:</label>
+        <br />
+        <input type="checkbox" value="Java" name="course" id="course" />Java
+        <input type="checkbox" value="Python" name="course" id="course" />Python
+        <input type="checkbox" value="C++" name="course" id="course" />C++
+        <input
+          type="checkbox"
+          value="JavaScript"
+          name="course"
+          id="course"
+        />JavaScript
+        <br />
+        <label for="message">Message:</label>
+        <br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          placeholder="Enter your message"
+        ></textarea>
+        <br />
+        <label for="web">Web Development:</label>
+        <br/>
+        <select name="web" id="web">
+            <optgroup label="Frontend">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="Node.js">Node.js</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+        </select>
+        <br/>
+        <input type="file" pattern="[jpegpng]" />
+        <br />
+        <button type="submit">Submit</button>
+        <input type="submit" value="Reset" />
+      </form>
+    </fieldset>
+  </body>
+</html>
