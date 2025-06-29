@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Example</title>
+    </head>
+    <body>
+        <h1>Form Practice</h1>
+        <fieldset>
+            <legend>Html 5 form element</legend>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+" minlength="5" maxlength="15" placeholder="Enter your name" required>
+                <br>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" pattern="[a-zA-Z0-9_-]{5,15}" placeholder="Enter your username" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" placeholder="Enter your password" required>
+                <br>
+                <label for="date of birth">DOB:</label>
+                <input type="text" pattern="\d{4}-\d{2}-\d{2}" id="dob" name="dob" required>
+                <br>
+                <button>Submit</button>
+            </form>
+
+        </fieldset>
+    </body>
+    </html>
